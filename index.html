@@ -8,26 +8,37 @@
   
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+  <section class="main-card">
+    <div class="banner">
+      <div class="layer"></div>
+    </div>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="card-text">
+      <div class="text">
+        <div class="paragraph">
+          <h1>Get <span>insights</span> that help your business grow.</h1>
+          <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall eficiency.</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <h2 class="count">10k+</h2>
+            <p class="stat-name">COMPANIES</p>
+          </div>
+          <div class="stat">
+            <h2 class="count">314</h2>
+            <p class="stat-name">TEMPLATES</p>
+          </div>
+          <div class="stat">
+            <h2 class="count">12M+</h2>
+            <p class="stat-name">QUERIES</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
 </body>
 </html>

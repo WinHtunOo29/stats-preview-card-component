@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Red+Hat+Display:wght@300&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: hsl(233, 47%, 7%);
+}
+
+.main-card {
+	max-width: 70%;
+	height: 400px;
+	margin: 9% auto;
+	display: flex;
+	flex-direction: row-reverse;
+	border-radius: 8px;
+	background-color: hsl(244, 38%, 16%);
+}
+
+.banner {
+	width: 50%;
+	height: 400px;
+	background-image: url("./images/image-header-desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	position: relative;
+}
+
+.layer {
+	background-color: hsl(277, 64%, 61%);
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+.card-text {
+	width: 50%;
+}
+
+.text {
+	max-width: 350px;
+	margin: 7% auto;
+	padding: 5px 20px;	
+}
+
+.paragraph h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 30px;
+}
+
+.paragraph span {
+	color: hsl(277, 64%, 61%);
+}
+
+.paragraph p {
+	width: 90%;
+	color: hsla(0, 0%, 100%, 0.75);
+	line-height: 23px;
+	font-size: 15px;
+}
+
+.stats {
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.stat {
+	margin-right: 35px;
+}
+
+.stat .count {
+	color: hsl(0, 0%, 100%);
+}
+
+.stat .stat-name {
+	color: hsla(0, 0%, 100%, 0.75);
+	font-size: 12px;
+	margin-top: -15px;
+}
+
+@media only screen and (max-width: 930px) {
+	.main-card {
+		display: block;
+		margin: 17% auto;
+		height: auto;
+	}
+
+	.banner {
+		width: 100%;
+		background-image: url("./images/image-header-mobile.jpg");
+		border-top-left-radius: 8px;
+		border-bottom-right-radius: 0;
+	}
+
+	.card-text {
+		width: 100%;
+	}
+
+	.text {
+		max-width: 80%;
+		text-align: center;
+	}
+
+	.paragraph p {
+		width: 100%;
+	}
+
+	.stats {
+		justify-content: space-between;
+	}
+
+	.stat {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.banner {
+		height: 200px;
+	}
+
+	.text {
+		margin: 3% auto;
+	}
+
+	.paragraph h1 {
+		font-size: 22px;
+	}
+
+	.paragraph p {
+		font-size: 12px;
+	}
+
+	.stats {
+		display: block;
+	}
+
+	.stat {
+		margin-top: 30px;
+	}
+
+	.stat .count {
+		font-size: 19px;
+	}
+
+	.stat .stat-name {
+		margin-top: -10px;
+	}
+}
